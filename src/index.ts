@@ -1,12 +1,9 @@
-import fs from 'fs';
 import path from 'path';
+import FlightRadarParser from './services/flightRadarParser/FlightRadarParser';
 
-const filesDir = path.join(__dirname, '../files');
+const file = path.join(__dirname, '../files/LH491-327a378e.kml');
 
-load();
+const frp = new FlightRadarParser(file);
+const coordinates = frp.getRouteCoordinates();
 
-function load(): void {
-    const files = fs.readdirSync(filesDir);
-
-    console.log(files);
-}
+console.log(coordinates);
