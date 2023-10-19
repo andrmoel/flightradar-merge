@@ -1,0 +1,16 @@
+{
+  "name": "flightradar-merge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:andrmoel/flightradar-merge.git",
+  "author": "Andreas Moeller <andrmoel@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
